@@ -12,11 +12,12 @@
 		372A47D41FD7B13F00C22651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47D21FD7B13F00C22651 /* Main.storyboard */; };
 		372A47D61FD7B13F00C22651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372A47D51FD7B13F00C22651 /* Assets.xcassets */; };
 		372A47D91FD7B13F00C22651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47D71FD7B13F00C22651 /* LaunchScreen.storyboard */; };
-		372A47E11FD7B22B00C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47E01FD7B22B00C22651 /* OutletSwitch.swift */; };
 		372A47E91FD8A7AF00C22651 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372A47E81FD8A7AF00C22651 /* NotificationCenter.framework */; };
 		372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */; };
 		372A47EF1FD8A7AF00C22651 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */; };
 		372A47F31FD8A7AF00C22651 /* Switch Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 372A47E61FD8A7AF00C22651 /* Switch Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		372A47F91FD8A8A800C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47E01FD7B22B00C22651 /* OutletSwitch.swift */; };
+		372A47FB1FD8A8E500C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		372A47EE1FD8A7AF00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		372A47F01FD8A7AF00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */,
+				372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */,
 				372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */,
 				372A47F01FD8A7AF00C22651 /* Info.plist */,
 			);
@@ -234,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372A47D11FD7B13F00C22651 /* ViewController.swift in Sources */,
-				372A47E11FD7B22B00C22651 /* OutletSwitch.swift in Sources */,
+				372A47F91FD8A8A800C22651 /* OutletSwitch.swift in Sources */,
 				372A47CF1FD7B13F00C22651 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +246,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372A47FB1FD8A8E500C22651 /* OutletSwitch.swift in Sources */,
 				372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
