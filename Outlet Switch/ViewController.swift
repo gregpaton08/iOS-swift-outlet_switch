@@ -14,11 +14,25 @@ class ViewController: UIViewController {
     
     @IBAction func pressOutletSwitch(_ sender: UISwitch) {
         outlet.setStatus(sender.isOn) {
-            
+            self.refreshStatus()
         }
     }
     
     private let outlet = OutletSwitch()
+    
+    private func refreshStatus() {
+        outletSwitch.isEnabled = false
+        outlet.getStatus { (status, error) in
+            DispatchQueue.main.async {
+                if status != nil {
+                    self.outletSwitch.isEnabled = true
+                    self.outletSwitch.isOn = status!
+                } else {
+                    
+                }
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
