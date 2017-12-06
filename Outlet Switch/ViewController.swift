@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private let outlet = OutletSwitch()
+    private let outlet = OutletSwitch("192.168.1.166:3333")
     
     private func refreshStatus() {
         DispatchQueue.main.sync {

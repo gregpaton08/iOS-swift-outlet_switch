@@ -16,6 +16,10 @@ public class OutletSwitch {
         
     }
     
+    public init(_ withAddress: String) {
+        address = withAddress
+    }
+    
     public var statusRequestState: URLSessionTask.State {
         get {
             return getDataTask?.state ?? .completed
