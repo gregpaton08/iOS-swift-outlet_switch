@@ -10,10 +10,43 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    
+    @IBOutlet weak var outletSwitch: UISwitch!
+    
+    @IBAction func pressOutletSwitch(_ sender: UISwitch) {
+        sender.isEnabled = false
+        outlet.setStatus(sender.isOn) {
+            self.refreshStatus()
+        }
+    }
+    
+    private let outlet = OutletSwitch("192.168.1.166:3333")
+    
+    private func refreshStatus() {
+        if !Thread.isMainThread {
+            DispatchQueue.main.sync {
+                outletSwitch.isEnabled = false
+            }
+        } else {
+            outletSwitch.isEnabled = false
+        }
         
+        outlet.getStatus { (status, error) in
+            DispatchQueue.main.async {
+                if status != nil {
+                    self.outletSwitch.isEnabled = true
+                    self.outletSwitch.isOn = status!
+                } else {
+                    
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        
+        refreshStatus()
     }
     
     override func didReceiveMemoryWarning() {
@@ -23,6 +56,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
+        
+        refreshStatus()
         
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData

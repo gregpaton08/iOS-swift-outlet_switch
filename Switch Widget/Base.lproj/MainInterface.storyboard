@@ -18,16 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5EY-oy-cZV">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5EY-oy-cZV">
                                 <rect key="frame" x="136" y="3" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="pressOutletSwitch:" destination="M4Y-Lb-cyx" eventType="valueChanged" id="pai-1w-UQS"/>
+                                </connections>
                             </switch>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="5EY-oy-cZV" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="2BY-7U-BU7"/>
+                            <constraint firstItem="5EY-oy-cZV" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="vtD-WK-Qna"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="37"/>
+                    <connections>
+                        <outlet property="outletSwitch" destination="5EY-oy-cZV" id="oGb-zs-E8f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
