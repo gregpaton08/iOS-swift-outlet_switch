@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var outletSwitch: UISwitch!
     
     @IBAction func pressOutletSwitch(_ sender: UISwitch) {
+        sender.isEnabled = false
         outlet.setStatus(sender.isOn) {
             self.refreshStatus()
         }
@@ -21,7 +22,10 @@ class ViewController: UIViewController {
     private let outlet = OutletSwitch()
     
     private func refreshStatus() {
-        outletSwitch.isEnabled = false
+        DispatchQueue.main.sync {
+            outletSwitch.isEnabled = false
+        }
+        
         outlet.getStatus { (status, error) in
             DispatchQueue.main.async {
                 if status != nil {
