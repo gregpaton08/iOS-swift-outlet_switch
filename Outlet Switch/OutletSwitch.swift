@@ -34,7 +34,7 @@ public class OutletSwitch {
     private var getDataTask: URLSessionDataTask?
     
     private func getLockStatusUrl() -> URL? {
-        return URL(string: "http://" + address + "/api/v1/lock_status")
+        return URL(string: "http://" + address + "/api/v1.0/light_status")
     }
     
     public func getStatus(_ callbackFunction: @escaping (Bool?, Error?) -> Void) {

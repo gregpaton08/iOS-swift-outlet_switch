@@ -13,12 +13,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var outletSwitch: UISwitch!
     
     @IBAction func pressOutletSwitch(_ sender: UISwitch) {
-        
+        outlet.setStatus(sender.isOn) {
+            
+        }
     }
+    
+    private let outlet = OutletSwitch()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        outlet.address = "192.168.1.166:3333"
     }
 
 }
