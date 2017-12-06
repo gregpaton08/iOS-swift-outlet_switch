@@ -13,7 +13,35 @@
 		372A47D61FD7B13F00C22651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372A47D51FD7B13F00C22651 /* Assets.xcassets */; };
 		372A47D91FD7B13F00C22651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47D71FD7B13F00C22651 /* LaunchScreen.storyboard */; };
 		372A47E11FD7B22B00C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47E01FD7B22B00C22651 /* OutletSwitch.swift */; };
+		372A47E91FD8A7AF00C22651 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372A47E81FD8A7AF00C22651 /* NotificationCenter.framework */; };
+		372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */; };
+		372A47EF1FD8A7AF00C22651 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */; };
+		372A47F31FD8A7AF00C22651 /* Switch Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 372A47E61FD8A7AF00C22651 /* Switch Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		372A47F11FD8A7AF00C22651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372A47C31FD7B13F00C22651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372A47E51FD8A7AF00C22651;
+			remoteInfo = "Switch Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		372A47F71FD8A7AF00C22651 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				372A47F31FD8A7AF00C22651 /* Switch Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		372A47CB1FD7B13F00C22651 /* Outlet Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Outlet Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +52,11 @@
 		372A47D81FD7B13F00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		372A47DA1FD7B13F00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372A47E01FD7B22B00C22651 /* OutletSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
+		372A47E61FD8A7AF00C22651 /* Switch Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Switch Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		372A47E81FD8A7AF00C22651 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		372A47EE1FD8A7AF00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		372A47F01FD8A7AF00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +67,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		372A47E31FD8A7AF00C22651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A47E91FD8A7AF00C22651 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				372A47CD1FD7B13F00C22651 /* Outlet Switch */,
+				372A47EA1FD8A7AF00C22651 /* Switch Widget */,
+				372A47E71FD8A7AF00C22651 /* Frameworks */,
 				372A47CC1FD7B13F00C22651 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				372A47CB1FD7B13F00C22651 /* Outlet Switch.app */,
+				372A47E61FD8A7AF00C22651 /* Switch Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +111,24 @@
 			path = "Outlet Switch";
 			sourceTree = "<group>";
 		};
+		372A47E71FD8A7AF00C22651 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				372A47E81FD8A7AF00C22651 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		372A47EA1FD8A7AF00C22651 /* Switch Widget */ = {
+			isa = PBXGroup;
+			children = (
+				372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */,
+				372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */,
+				372A47F01FD8A7AF00C22651 /* Info.plist */,
+			);
+			path = "Switch Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +139,34 @@
 				372A47C71FD7B13F00C22651 /* Sources */,
 				372A47C81FD7B13F00C22651 /* Frameworks */,
 				372A47C91FD7B13F00C22651 /* Resources */,
+				372A47F71FD8A7AF00C22651 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				372A47F21FD8A7AF00C22651 /* PBXTargetDependency */,
 			);
 			name = "Outlet Switch";
 			productName = "Outlet Switch";
 			productReference = 372A47CB1FD7B13F00C22651 /* Outlet Switch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		372A47E51FD8A7AF00C22651 /* Switch Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372A47F61FD8A7AF00C22651 /* Build configuration list for PBXNativeTarget "Switch Widget" */;
+			buildPhases = (
+				372A47E21FD8A7AF00C22651 /* Sources */,
+				372A47E31FD8A7AF00C22651 /* Frameworks */,
+				372A47E41FD8A7AF00C22651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Switch Widget";
+			productName = "Switch Widget";
+			productReference = 372A47E61FD8A7AF00C22651 /* Switch Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +179,10 @@
 				ORGANIZATIONNAME = GSP;
 				TargetAttributes = {
 					372A47CA1FD7B13F00C22651 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					372A47E51FD8A7AF00C22651 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -117,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				372A47CA1FD7B13F00C22651 /* Outlet Switch */,
+				372A47E51FD8A7AF00C22651 /* Switch Widget */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +215,14 @@
 				372A47D91FD7B13F00C22651 /* LaunchScreen.storyboard in Resources */,
 				372A47D61FD7B13F00C22651 /* Assets.xcassets in Resources */,
 				372A47D41FD7B13F00C22651 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A47E41FD8A7AF00C22651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A47EF1FD8A7AF00C22651 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +239,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		372A47E21FD8A7AF00C22651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		372A47F21FD8A7AF00C22651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372A47E51FD8A7AF00C22651 /* Switch Widget */;
+			targetProxy = 372A47F11FD8A7AF00C22651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		372A47D21FD7B13F00C22651 /* Main.storyboard */ = {
@@ -162,6 +272,14 @@
 				372A47D81FD7B13F00C22651 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372A47EE1FD8A7AF00C22651 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +395,7 @@
 		372A47DE1FD7B13F00C22651 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;
@@ -292,6 +411,7 @@
 		372A47DF1FD7B13F00C22651 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;
@@ -299,6 +419,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gregpaton08.Outlet-Switch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		372A47F41FD8A7AF00C22651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDF68884M;
+				INFOPLIST_FILE = "Switch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregpaton08.Outlet-Switch.Switch-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		372A47F51FD8A7AF00C22651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UDF68884M;
+				INFOPLIST_FILE = "Switch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregpaton08.Outlet-Switch.Switch-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -321,6 +471,15 @@
 			buildConfigurations = (
 				372A47DE1FD7B13F00C22651 /* Debug */,
 				372A47DF1FD7B13F00C22651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372A47F61FD8A7AF00C22651 /* Build configuration list for PBXNativeTarget "Switch Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372A47F41FD8A7AF00C22651 /* Debug */,
+				372A47F51FD8A7AF00C22651 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
