@@ -22,7 +22,11 @@ class ViewController: UIViewController {
     private let outlet = OutletSwitch("192.168.1.166:3333")
     
     private func refreshStatus() {
-        DispatchQueue.main.sync {
+        if !Thread.isMainThread {
+            DispatchQueue.main.sync {
+                outletSwitch.isEnabled = false
+            }
+        } else {
             outletSwitch.isEnabled = false
         }
         
@@ -40,9 +44,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        outlet.address = "192.168.1.166:3333"
+        refreshStatus()
     }
 
 }
