@@ -28,6 +28,20 @@
 			remoteGlobalIDString = 372A47E51FD8A7AF00C22651;
 			remoteInfo = "Switch Widget";
 		};
+		37C6A813200BDB9400469840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37C6A7F4200BD9C000469840;
+			remoteInfo = OutletSwitchControl;
+		};
+		37C6A815200BDB9400469840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37C6A7FD200BD9C000469840;
+			remoteInfo = OutletSwitchControlTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +73,7 @@
 		372A47EE1FD8A7AF00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		372A47F01FD8A7AF00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
+		37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OutletSwitchControl.xcodeproj; path = OutletSwitchControl/OutletSwitchControl.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,7 @@
 		372A47C21FD7B13F00C22651 = {
 			isa = PBXGroup;
 			children = (
+				37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */,
 				372A47CD1FD7B13F00C22651 /* Outlet Switch */,
 				372A47EA1FD8A7AF00C22651 /* Switch Widget */,
 				372A47E71FD8A7AF00C22651 /* Frameworks */,
@@ -130,6 +146,15 @@
 				372A47F01FD8A7AF00C22651 /* Info.plist */,
 			);
 			path = "Switch Widget";
+			sourceTree = "<group>";
+		};
+		37C6A80F200BDB9300469840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37C6A814200BDB9400469840 /* OutletSwitchControl.framework */,
+				37C6A816200BDB9400469840 /* OutletSwitchControlTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +227,12 @@
 			mainGroup = 372A47C21FD7B13F00C22651;
 			productRefGroup = 372A47CC1FD7B13F00C22651 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 37C6A80F200BDB9300469840 /* Products */;
+					ProjectRef = 37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				372A47CA1FD7B13F00C22651 /* Outlet Switch */,
@@ -209,6 +240,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		37C6A814200BDB9400469840 /* OutletSwitchControl.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OutletSwitchControl.framework;
+			remoteRef = 37C6A813200BDB9400469840 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37C6A816200BDB9400469840 /* OutletSwitchControlTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OutletSwitchControlTests.xctest;
+			remoteRef = 37C6A815200BDB9400469840 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		372A47C91FD7B13F00C22651 /* Resources */ = {
