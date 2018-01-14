@@ -10,6 +10,7 @@
 		37C6A7FE200BD9C000469840 /* OutletSwitchControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C6A7F4200BD9C000469840 /* OutletSwitchControl.framework */; };
 		37C6A803200BD9C100469840 /* OutletSwitchControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6A802200BD9C100469840 /* OutletSwitchControlTests.swift */; };
 		37C6A805200BD9C100469840 /* OutletSwitchControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C6A7F7200BD9C000469840 /* OutletSwitchControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C6A81B200BDD2200469840 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6A81A200BDD2200469840 /* OutletSwitch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		37C6A7FD200BD9C000469840 /* OutletSwitchControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutletSwitchControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C6A802200BD9C100469840 /* OutletSwitchControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletSwitchControlTests.swift; sourceTree = "<group>"; };
 		37C6A804200BD9C100469840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37C6A81A200BDD2200469840 /* OutletSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		37C6A7F6200BD9C000469840 /* OutletSwitchControl */ = {
 			isa = PBXGroup;
 			children = (
+				37C6A81A200BDD2200469840 /* OutletSwitch.swift */,
 				37C6A7F7200BD9C000469840 /* OutletSwitchControl.h */,
 				37C6A7F8200BD9C000469840 /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					37C6A7F3200BD9C000469840 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					37C6A7FC200BD9C000469840 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C6A81B200BDD2200469840 /* OutletSwitch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		37C6A809200BD9C100469840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gregpaton08.OutletSwitchControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		37C6A80A200BD9C100469840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		37C6A80C200BD9C100469840 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;
 				INFOPLIST_FILE = OutletSwitchControlTests/Info.plist;
@@ -390,6 +399,7 @@
 		37C6A80D200BD9C100469840 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;
 				INFOPLIST_FILE = OutletSwitchControlTests/Info.plist;
