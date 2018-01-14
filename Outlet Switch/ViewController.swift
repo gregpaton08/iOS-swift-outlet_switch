@@ -13,6 +13,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var outletSwitch: UISwitch!
     
+    @objc func handleTapGesture(_ sender: UITapGestureRecognizer) {
+        if !outletSwitch.isEnabled {
+            self.refreshStatus()
+        }
+    }
+    
     @IBAction func pressOutletSwitch(_ sender: UISwitch) {
         sender.isEnabled = false
         outlet.setStatus(sender.isOn) {
@@ -47,6 +53,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         refreshStatus()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTapGesture(_:)))
+        tapGesture.numberOfTapsRequired = 1
+        tapGesture.numberOfTouchesRequired = 1
+        self.view.addGestureRecognizer(tapGesture)
     }
 
 }
