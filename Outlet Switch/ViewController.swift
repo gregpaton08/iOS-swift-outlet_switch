@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import OutletSwitchControl
 
 class ViewController: UIViewController {
 

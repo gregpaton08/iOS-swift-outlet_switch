@@ -16,8 +16,9 @@
 		372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */; };
 		372A47EF1FD8A7AF00C22651 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */; };
 		372A47F31FD8A7AF00C22651 /* Switch Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 372A47E61FD8A7AF00C22651 /* Switch Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		372A47F91FD8A8A800C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47E01FD7B22B00C22651 /* OutletSwitch.swift */; };
-		372A47FB1FD8A8E500C22651 /* OutletSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */; };
+		37C6A81E200BDEA400469840 /* OutletSwitchControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C6A814200BDB9400469840 /* OutletSwitchControl.framework */; };
+		37C6A81F200BDEA400469840 /* OutletSwitchControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 37C6A814200BDB9400469840 /* OutletSwitchControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37C6A823200BE0E600469840 /* OutletSwitchControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C6A814200BDB9400469840 /* OutletSwitchControl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,13 @@
 			remoteGlobalIDString = 37C6A7FD200BD9C000469840;
 			remoteInfo = OutletSwitchControlTests;
 		};
+		37C6A820200BDEA400469840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 37C6A7F3200BD9C000469840;
+			remoteInfo = OutletSwitchControl;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +64,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		37C6A822200BDEA400469840 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37C6A81F200BDEA400469840 /* OutletSwitchControl.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -66,13 +85,11 @@
 		372A47D51FD7B13F00C22651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		372A47D81FD7B13F00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		372A47DA1FD7B13F00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		372A47E01FD7B22B00C22651 /* OutletSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
 		372A47E61FD8A7AF00C22651 /* Switch Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Switch Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		372A47E81FD8A7AF00C22651 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		372A47EE1FD8A7AF00C22651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		372A47F01FD8A7AF00C22651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutletSwitch.swift; sourceTree = "<group>"; };
 		37C6A80E200BDB9300469840 /* OutletSwitchControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OutletSwitchControl.xcodeproj; path = OutletSwitchControl/OutletSwitchControl.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37C6A81E200BDEA400469840 /* OutletSwitchControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				372A47E91FD8A7AF00C22651 /* NotificationCenter.framework in Frameworks */,
+				37C6A823200BE0E600469840 /* OutletSwitchControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +143,6 @@
 				372A47D51FD7B13F00C22651 /* Assets.xcassets */,
 				372A47D71FD7B13F00C22651 /* LaunchScreen.storyboard */,
 				372A47DA1FD7B13F00C22651 /* Info.plist */,
-				372A47E01FD7B22B00C22651 /* OutletSwitch.swift */,
 			);
 			path = "Outlet Switch";
 			sourceTree = "<group>";
@@ -141,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				372A47EB1FD8A7AF00C22651 /* TodayViewController.swift */,
-				372A47FA1FD8A8E500C22651 /* OutletSwitch.swift */,
 				372A47ED1FD8A7AF00C22651 /* MainInterface.storyboard */,
 				372A47F01FD8A7AF00C22651 /* Info.plist */,
 			);
@@ -168,11 +185,13 @@
 				372A47C81FD7B13F00C22651 /* Frameworks */,
 				372A47C91FD7B13F00C22651 /* Resources */,
 				372A47F71FD8A7AF00C22651 /* Embed App Extensions */,
+				37C6A822200BDEA400469840 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				372A47F21FD8A7AF00C22651 /* PBXTargetDependency */,
+				37C6A821200BDEA400469840 /* PBXTargetDependency */,
 			);
 			name = "Outlet Switch";
 			productName = "Outlet Switch";
@@ -285,7 +304,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				372A47D11FD7B13F00C22651 /* ViewController.swift in Sources */,
-				372A47F91FD8A8A800C22651 /* OutletSwitch.swift in Sources */,
 				372A47CF1FD7B13F00C22651 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372A47FB1FD8A8E500C22651 /* OutletSwitch.swift in Sources */,
 				372A47EC1FD8A7AF00C22651 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +323,11 @@
 			isa = PBXTargetDependency;
 			target = 372A47E51FD8A7AF00C22651 /* Switch Widget */;
 			targetProxy = 372A47F11FD8A7AF00C22651 /* PBXContainerItemProxy */;
+		};
+		37C6A821200BDEA400469840 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OutletSwitchControl;
+			targetProxy = 37C6A820200BDEA400469840 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -448,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;
@@ -464,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4UDF68884M;

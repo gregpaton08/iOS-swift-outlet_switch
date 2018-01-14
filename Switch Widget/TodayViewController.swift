@@ -8,6 +8,7 @@
 
 import UIKit
 import NotificationCenter
+import OutletSwitchControl
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
