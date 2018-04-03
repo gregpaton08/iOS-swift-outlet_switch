@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private let outlet = OutletSwitch("192.168.1.166:3333")
+    private let outlet = OutletSwitch("rpi1:3333")
     
     private func refreshStatus() {
         if !Thread.isMainThread {
